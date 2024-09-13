@@ -5,6 +5,8 @@ const connexionDB = require("./config/db");
 const departamentoRoutes = require('./routes/departamentoRoutes')
 const municipioRoutes = require('./routes/municipioRoutes') 
 app.use(express.json());
+connexionDB();
+
 
 //Rutas de API
 app.use('/api', departamentoRoutes);
@@ -15,3 +17,4 @@ app.use('/api', municipioRoutes);
 app.listen(port, () => {
     console.log("servidor corriendo en puerto 4000")
 });
+

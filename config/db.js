@@ -2,10 +2,7 @@ const mongoose = require('mongoose')
 
 const conexionDB = async () => {
     try{
-        mongoose.connect('mongodb+srv://maria:1059594660@cluster0.q92cait.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
+        mongoose.connect('mongodb+srv://maria:maria@cluster0.q92cait.mongodb.net/Pais?retryWrites=true&w=majority&appName=Cluster0');
         console.log("Conectada a la base de datos");
 
     }catch(e){
